@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<title>Седона</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">	
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="main-header-logo">
+				<a>
+					<img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта Седона">
+				</a>
+			</div>
+			<div class="main-navigation-wrapper">
+				<div class="conteiner">
+			        <nav class="navigation-link">
+				        <ul class="navigation-link-item">
+					        <li><a href="#">Информация</a></li>
+					        <li><a href="#">Фото и видео</a></li>
+					        <li><a href="#">Карта штата</a></li>
+					        <li><a href="catalog.html">Гостиницы</a></li>
+					    </ul>
+				    </nav>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="welcome-image">
+				<h1 class="visually-hidden">Седона - райский уголок для романтиков и путешественников</h1>
+				<img src="img/background-photo-sedona.jpg" width="1200" height="506px" alt="Изображение местных красот">
+				<img src="img/welcome.svg" width="457" height="346" alt="Приветственная надпись на изображении">
+			</section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+			<section class="advantages">
+				<img src="img/polygon.svg" width="1200" height="60" alt="Узор картинки">
+				<div class="advatages-write-block">
+				    <h2 class="advantages-sedona">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+				    <p class="advantages-sedona-look">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+				</div>
+				<ul class="advantages-sedona-main">
+					<li class="advantages-sedona-blue"><h3>Настоящий городок</h3><p class="advantages-sedona-num">№1</p><p class="advantages-sedona-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p></li>
+					<li><h3>Мост дьявола</h3><p class="advantages-sedona-num">№2</p><p class="advantages-sedona-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p></li>
+					<li><h3>Небольшая площадь</h3><p class="advantages-sedona-num">№3</p><p class="advantages-sedona-description">Все достопримечательности находятся очень близко</p></li>
+					<li><h3>Красивая дорога</h3><p class="advantages-sedona-num">№4</p><p class="advantages-sedona-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p></li>
+					<li><h3>Мало туристов</h3><p class="advantages-sedona-num">№5</p><p class="advantages-sedona-description">Большинство едет в гранд каньон и толпится там</p></li>
+					<li>
+						<ul class="advantages-sedona-extra">
+							<li><h3>Жильё</h3><p class="advantages-sedona-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p></li>
+							<li><h3>Еда</h3><p class="advantages-sedona-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p></li>
+							<li><h3>Сувениры</h3><p class="advantages-sedona-description">Не только китайского, но и местного производства!</p></li>
+						</ul>
+					</li>
+				</ul>
+				<img src="img/reasons-sedona.jpg" width="800" height="256" alt="фото городка Sedona">
+				<img src="img/canion-sedona.jpg"  width="800" height="256" alt="фото каньона Sedona">
+			</section>
 
-  </body>
+			<section class="offer">
+				<h2 class="offer-question">Заинтересовались?</h2>
+				<p class="offer-choose">Укажите предполагаемые даты поездки,<br> 
+						и мы покажем вам лучшие предложения гостиниц в седоне</p>
+				<a href="" class="offer-search-hotel" aria-label="Нажмите чтобы открыть форму поиска">Поиск гостиницы в Седоне</a>
+				<form class="form-search-hotel" action="http://echo.htmlacademy.ru" method="POST" aria-label="Форма заказа лучших предложений гостиниц">
+					<label class="form-label-go">
+						Дата заезда: <input class="form-date-go" type="date" value="2017-04-24">
+					</label>
+					<label class="form-label-back">
+						Дата выезда: <input class="form-date-back" type="date" value="2017-06-04">
+					</label>
+					<label class="form-label-parents">
+						Взрослые: <input class="form-parents-num" type="number" value="2" min="1" max="10" step="1">
+					</label>
+					<label class="form-label-children">
+					    Дети: <input class="form-children-num" type="number" value="0" min="0" max="10" step="1">
+					</label>
+					<button type="button">Найти</button>
+				</form>
+				
+			</section>
+		</main>
+		<footer>
+			<b class="hashtag">#VISITSEDONA</b>
+			<div class="social-button">
+				<ul class="social-button-item">
+					<li><a href="https://twitter.com" aria-label="Twitter"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
+					<li><a href="https://facebook.com" aria-label="Facebook"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
+					<li><a href="https://youtube.com" aria-label="Youtube"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
+				</ul>
+			</div>
+	
+			<a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Сайт разработчиков темы Седона">
+				<p class="htmlacademy-pointer">website by</p><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчиков сайта темы Седона">
+			</a>
+		</footer>
+	</body>
 </html>
+
+
