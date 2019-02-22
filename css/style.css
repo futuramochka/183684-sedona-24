@@ -1,0 +1,160 @@
+body{
+    margin: 0 auto;
+     
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    width: 1280px;
+    background-color: #f2f2f2;
+    color:#000000;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
+
+h3{
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;    
+}
+
+.navigation-link-item{
+    list-style: none;   
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.welcome-image{
+    background-image: url("../img/background-photo-sedona.jpg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 773px;
+    background-color: #f2f2f2;
+}
+
+.advantages-sedona{
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    padding-top: 70px;
+    margin: auto;
+}
+
+.advantages-sedona-look{
+    text-transform: uppercase;
+    color: #333333;
+    text-align: center;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.advantages-sedona-main li,
+.advantages-sedona-extra li{
+    list-style: none;
+    line-height: 21px;  
+}
+
+.offer-question{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+
+    background-color: white;
+}
+
+.offer-choose{
+    color: #333333;
+
+    background-color: white;
+}
+
+.offer-search-hotel{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: white;
+    border: 1px solid #766357;
+    background-color: #766357;
+}
+
+.form-label-go,
+.form-label-back,
+.form-label-parents,
+.form-label-children{
+    font-weight: bold;
+}
+
+.search{
+    cursor: pointer;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: white;
+    border: 1px solid #81b3d2;
+    background-color: #81b3d2;
+}
+
+.hashtag{
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+
+    background-color: white;
+}
+
+.htmlacademy-pointer{
+    color: #000000;
+
+    background-color: white;
+}
+
+/*hotel list*/
+.hotel-item{
+    list-style: none;
+}
+
+.hotel-name{
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+
+    background-color: white;
+}
+
+.hotel-description{
+    color: #000000;
+
+    background-color: white;
+}
+
+.hotel-level,
+.hotel-price,
+.hotel-stars{
+    font-size: 14px;
+    line-height: 21px;
+    color: black;
+
+    background-color: white;
+}
+
+.hotel-stars li,
+.bread-crumbs li,
+.selection-services li{
+    list-style: none;
+}
+
+

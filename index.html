@@ -31,8 +31,8 @@
 				
 			    <section class="advantages">
 				    <div class="advatages-write-block">
-						<p class="advantages-sedona-look">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 						<h2 class="advantages-sedona">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+						<p class="advantages-sedona-look">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 				    </div>
                     <section class="advantages-sedona-main">
 						<div class="advantages-sedona-blue">
@@ -93,26 +93,28 @@
 					<form class="form-search-hotel" action="http://echo.htmlacademy.ru" method="GET" aria-label="Форма заказа лучших предложений гостиниц">
 					    <p>
 							<label for="date-field-go" class="form-label-go">Дата заезда: </label>
-							<input class="form-date-go visually-hidden" id="date-field-go" type="date" name="date-go" value="2017-04-24">
-							<button type="submit" name="ticket-date-go"><img src="" alt="кнопка с календариком"></button>
+							<input class="form-date-go" aria-label="Дата заезда" id="date-field-go" type="date" name="date-go" value="2017-04-24">
+							<button type="submit" aria-label="Выбрать в календаре дату заезда" name="ticket-date-go"><img src="" alt="кнопка с календариком"></button>
 						</p>
 					    <p>
 							<label for="date-field-back" class="form-label-back">Дата выезда:</label>
-							<input class="form-date-back visually-hidden" id="date-field-back" type="date" name="date-back" value="2017-06-04">
-							<button type="submit" name="ticket-date-back"><img src="" alt="кнопка с календариком"></button>
+							<input class="form-date-back" aria-label="Дата выезда" id="date-field-back" type="date" name="date-back" value="2017-06-04">
+							<button type="submit" aria-label="Выбрать в календаре дату выезда" name="ticket-date-back"><img src="" alt="кнопка с календариком"></button>
 						</p>
 						
 					    <p>
 							<label for="number-field-parents" class="form-label-parents">Взрослые:</label>
-							<input class="form-parents-num visually-hidden" id="number-field-parents" name="number-parents" type="number" value="2" min="1" max="10" step="1">
-						</p>
-					    
-					    <p>
+							<button type="button" aria-label="Увеличить количество взрослых" name="button-parents-plus">+</button>
+							<input class="form-parents-num" aria-label="Количество взрослых" id="number-field-parents" name="number-parents" type="number" value="2" min="1" max="10" step="1">
+							<button type="button" aria-label="Уменьшить количество взрослых" name="button-parents-minus">-</button>
+						
 							<label for="number-field-children" class="form-label-children">Дети:</label>
-							<input class="form-children-num visually-hiddens" id="number-field-children" name="number-children" type="number" value="0" min="0" max="10" step="1">
+                            <button type="button" aria-label="Увеличить количество детей" name="button-children-plus">+</button>
+							<input class="form-children-num" aria-label="Количество детей" id="number-field-children" name="number-children" type="number" value="0" min="0" max="10" step="1">
+							<button type="button" aria-label="Уменьшить количество детей" name="button-children-minus">-</button>
 						</p>
 					    
-						<button type="submit" name="ticket-search">Найти</button>
+						<button type="submit" class="search" aria-label="Нажать чтобы найти предложение" name="ticket-search">Найти</button>
 				    </form>
 				</section>
 			</main>
