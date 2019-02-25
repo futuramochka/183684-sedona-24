@@ -6,20 +6,31 @@ body{
     line-height: 26px;
     width: 1280px;
     background-color: #f2f2f2;
-    color:#000000;
+    color:#333333;
     text-transform: uppercase;
 }
 
 a{
     text-decoration: none;
     font-weight: bold;
-    color: #000000;
+    color: #333333;
+}
+
+.navigation-link-item a:hover{
+    color: #81b3d2;
+}
+.hotel-flag{
+    color: #766357;
+}
+
+.navigation-link-item a:active{
+    color:#cacaca;
 }
 
 h3{
     font-size: 21px;
     font-weight: bold;
-    color: #000000;    
+    color: #333333;    
 }
 
 .navigation-link-item{
@@ -68,6 +79,17 @@ h3{
     line-height: 21px;  
 }
 
+.offer a{
+    background-color: #766357;
+}
+
+.offer a:hover{
+    background-color: #604e43;
+}
+
+.offer a:active{
+    background-color: #503e33;
+}
 .offer-question{
     font-size: 30px;
     font-weight: bold;
@@ -78,7 +100,6 @@ h3{
 
 .offer-choose{
     color: #333333;
-
     background-color: white;
 }
 
@@ -98,14 +119,76 @@ h3{
     font-weight: bold;
 }
 
+input{
+    background-color: #f2f2f2;
+}
+
+input:hover{
+    background-color: #ebebeb;
+}
+
+input:focus{
+    background-color: #ffffff;
+}
+
+.minus-parents,
+.minus-children,
+.plus-parents,
+.plus-children{
+    color: #a9a9a9;
+}
+
+.minus-parents:hover,
+.minus-children:hover,
+.plus-parents:hover,
+.plus-children:hover{
+    color: #000000;
+}
+
+.minus-parents:active,
+.minus-children:active,
+.plus-parents:active,
+.plus-children:active{
+    color: #81b3d2;
+}
+
 .search{
     cursor: pointer;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
+    width: 459px;
+    height: 60px;
     color: white;
     border: 1px solid #81b3d2;
     background-color: #81b3d2;
+}
+
+.search:hover{
+    background-color: #669ec0;
+}
+
+.search:active{
+    background-color: #5496bd;
+}
+
+.social-button-item li:first-child,
+.social-button-item li:nth-child(2),
+.social-button-item li:last-child{
+   
+    background-color: #81b3d2;
+}
+
+.social-button-item li:first-child:hover,
+.social-button-item li:nth-child(2):hover,
+.social-button-item li:last-child:hover{
+    background-color: #669ec0;
+}
+
+.social-button-item li:first-child:active,
+.social-button-item li:nth-child(2):active,
+.social-button-item li:last-child:active{
+    background-color: #5496bd;
 }
 
 .hashtag{
@@ -117,9 +200,13 @@ h3{
 }
 
 .htmlacademy-pointer{
-    color: #000000;
+    color: #231f20;
 
     background-color: white;
+}
+
+.htmlacademy-pointer:hover{
+    color: #81b3d2;
 }
 
 /*hotel list*/
