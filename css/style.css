@@ -10,6 +10,18 @@ body{
     text-transform: uppercase;
 }
 
+.main-header{
+    position: relative;
+}
+
+.navigation-link a>img{
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: 72px;
+    left: 530px;
+}
+
 a{
     text-decoration: none;
     font-weight: bold;
@@ -54,6 +66,11 @@ h3{
     width: 1200px;
     height: 773px;
     background-color: #f2f2f2;
+}
+
+.welcome-image img{
+    padding: 77px 370px;
+
 }
 
 .advantages-sedona{
@@ -242,6 +259,29 @@ input:focus{
 .bread-crumbs li,
 .selection-services li{
     list-style: none;
+}
+
+/*grid style*/
+
+.wrapper{
+    background-color: white;
+    width: 1200px;
+    margin: 0 40px;
+}
+
+.navigation-link{
+    height: 55px;
+}
+
+.navigation-link-item{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-link-item li{
+    padding-top: 14px;
 }
 
 
