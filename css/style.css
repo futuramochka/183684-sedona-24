@@ -64,13 +64,15 @@ h3{
     background-image: url("../img/background-photo-sedona.jpg");
     background-repeat: no-repeat;
     width: 1200px;
-    height: 773px;
     background-color: #f2f2f2;
 }
 
-.welcome-image img{
+.welcome-image img:nth-child(2){
     padding: 77px 370px;
+}
 
+.welcome-image img:nth-child(3){
+    bottom: 25px;
 }
 
 .advantages-sedona{
@@ -282,6 +284,10 @@ input:focus{
 
 .navigation-link-item li{
     padding-top: 14px;
+}
+
+.navigation-link-item li:firs-child{
+    left: 73px;
 }
 
 
