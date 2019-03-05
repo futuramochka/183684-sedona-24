@@ -39,7 +39,7 @@ a{
     color:#cacaca;
 }
 
-h3{
+h3{/*это не верно необходимо задать отдельно для нужного h3 стили*/
     font-size: 21px;
     font-weight: bold;
     color: #333333;    
@@ -64,6 +64,7 @@ h3{
     background-image: url("../img/background-photo-sedona.jpg");
     background-repeat: no-repeat;
     width: 1200px;
+    height: 513px;
     background-color: #f2f2f2;
 }
 
@@ -72,7 +73,8 @@ h3{
 }
 
 .welcome-image img:nth-child(3){
-    bottom: 25px;
+    position: absolute;
+    top: 508px;
 }
 
 .advantages-sedona{
@@ -80,7 +82,7 @@ h3{
     font-weight: bold;
     color: #000000;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 60px;
     margin: auto;
 }
 
@@ -88,14 +90,125 @@ h3{
     text-transform: uppercase;
     color: #333333;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 38px;
+    padding-bottom: 60px;
     margin: auto;
+}
+
+.advantages-sedona-main{
+    text-align: center;
+}
+
+.advantages-sedona-main h3{
+    white-space: pre-line;
+}
+
+.advantages-sedona-main li{
+    padding-left: 40px;
 }
 
 .advantages-sedona-main li,
 .advantages-sedona-extra li{
     list-style: none;
-    line-height: 21px;  
+    line-height: 21px;
+}
+
+.advantages-sedona-blue{
+    background-color: #81b3d2;
+    min-height: 255px;
+    top: 50px;
+}
+
+.advantages-sedona-blue  h3{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 47px;
+    margin: 0;
+    font-size: 21px;
+    font-weight: bold;
+
+    color: white;
+}
+
+.advantages-sedona-blue p:nth-child(2){
+    color: white;
+}
+
+.advantages-sedona-blue p:nth-child(3){
+    white-space: pre-line;
+    font-size: 14px;
+
+    color: white;
+}
+
+.advantages-sedona-num{
+    font-size: 14px;
+
+    color: black;
+}
+
+.advantages-sedona-description{
+    padding: 0 50px;
+    white-space: pre-line;
+    font-size: 14px;
+
+    color: black;
+}
+
+.advantages-sedona-extra{
+    text-align: center;
+    min-height: 330px;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-sedona-extra li{
+    padding-top: 130px;
+    white-space: pre-line;
+    background-position-x: 160px;
+    background-position-y: 60px;
+    width: 400px;
+}
+
+.advantages-sedona-extra li:nth-child(1){
+    background-image: url("../img/home.png");
+    background-repeat: no-repeat;
+}
+
+.advantages-sedona-extra li:nth-child(2){
+    background-image: url("../img/hotdog.png");
+    background-repeat: no-repeat;
+}
+
+.advantages-sedona-extra li:nth-child(3){
+    background-image: url("../img/present.png");
+    background-repeat: no-repeat;
+}
+
+.advantages-sedona-extra h3,
+.advantages-sedona-extra p{
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-sedona-last{
+    background-color: #eeeeee;
+    min-height: 255px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+}
+
+.advantages-sedona-last li{
+    white-space: pre-line;
+    width: 400px;
+}
+
+.advantages-sedona-last h3,
+.advantages-sedona-last p{
+    margin: 0;
+    padding: 0;
 }
 
 .offer a{
@@ -288,6 +401,18 @@ input:focus{
 
 .navigation-link-item li:firs-child{
     left: 73px;
+}
+
+.advantages-sedona-main{
+    display: flex;
+}
+
+.advantages-sedona-extra{
+    display: flex;
+}
+
+.advantages-sedona-last{
+    display: flex;
 }
 
 
