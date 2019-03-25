@@ -21,27 +21,34 @@ body{
     line-height: 26px;
     text-decoration: none;
 
-    color: #000000;
+    color: #262626;
 }
 
 .navigation-link a>img{
     display: block;
     position: absolute;
+    z-index: 3;
     width: 140px;
     min-height: 72px;
     left: 540px;
 }
 
+a.hotel-flag{
+    color: #766357;
+}
+
 .navigation-link-item a:hover{
     color: #81b3d2;
-}
-.hotel-flag{
-    color: #766357;
 }
 
 .navigation-link-item a:active{
     color:#cacaca;
 }
+
+
+
+
+
 
 .navigation-link-item{
     list-style: none;   
@@ -60,31 +67,29 @@ body{
 }
 
 .visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
-	overflow: hidden;
+	position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
 
 .welcome-image{
     background-image: url("../img/background-photo-sedona.jpg");
     background-repeat: no-repeat;
     width: 1200px;
-    height: 513px;
-    background-color: #f2f2f2;
+    height: 513px;   
 }
 
 .welcome-image img:nth-child(2){
-    padding: 77px 370px;
+    padding-left:380px;
+    padding-right: 370px;
+    padding-top: 76px;
+    bottom: 508px;
 }
 
 .welcome-image img:nth-child(3){
-    position: absolute;
-    top: 508px;
+   padding-top: 26px;
 }
 
 .advantages-sedona{
@@ -223,7 +228,14 @@ body{
 
 .offer{
     text-align: center;
-    min-height: 293px;
+    min-height: 770px;
+}
+
+iframe{
+    position: absolute;
+    z-index: 0;
+    right: 74px;
+    padding-top: 61px;
 }
 
 .offer a{
@@ -241,6 +253,9 @@ body{
     font-size: 30px;
     font-weight: bold;
     color: #000000;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 38px;
 
     background-color: white;
 }
@@ -248,6 +263,8 @@ body{
 .offer-choose{
     color: #333333;
     background-color: white;
+    padding-bottom: 90px;
+    margin: 0;
 }
 
 .offer-search-hotel{
@@ -255,9 +272,134 @@ body{
     font-weight: bold;
     line-height: 26px;
     color: white;
+
+    position: relative;
+    z-index: 2;
+
+    padding: 34px 140px;
+    text-decoration: none;
     border: 1px solid #766357;
-    background-color: #766357;
 }
+
+.form-search{
+    display: none;
+}
+
+@keyframes bounce{
+    0% { transform: translateY(-100px);}
+    10% { transform: translateY(44px);}
+    20% { transform: translateY(88px);}
+    30% { transform: translateY(176px);}
+    100% { transform: translateY(0px);}
+}
+
+.form-search-display{
+    display: block;
+
+    animation-name: bounce;
+    animation-duration: 0.6s;
+}
+
+.form-search-hotel{
+    width: 572px;
+    min-height: 434px;
+    left: 314px;
+
+    position: relative;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.form-search-hotel p:nth-child(1){
+    padding-top: 90px;
+}
+
+.form-search-hotel p:nth-child(1),
+.form-search-hotel p:nth-child(2){
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.form-search-hotel p:nth-child(3){
+    padding-bottom: 53px;
+    margin: 0;
+}
+
+.form-date-go,
+.form-date-back{
+    border: 1px solid #f2f2f2;
+    background: #f2f2f2;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    
+    margin-left: 15px;
+    
+    width: 350px;
+    height: 40px;
+}
+
+.form-date-go:hover,
+.form-date-back:hover{
+    background-color: #ebebeb;
+}
+
+.datetime-reset-button{
+    display: none;
+}
+
+.form-date-go{
+    margin-left: 17px;
+}
+
+.form-date-go:focus,
+.form-date-back:focus{
+    outline: 1px solid #e5e5e5; 
+}
+
+::-webkit-datetime-edit{
+    padding: 10px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-clear-button{
+    display: none;
+}
+
+::-webkit-calendar-picker-indicator{
+    color: transparent;
+    opacity: 1;
+    background-image: url("../img/calendar.png");
+    background-repeat: no-repeat;
+    background-size: 19px 18px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+::-webkit-calendar-picker-indicator:hover{
+    color: transparent;
+    opacity: 1;
+    background-image: url("../img/calendar-black.png");
+    background-repeat: no-repeat;
+    background-size: 19px 18px;
+    background-color: #ffffff;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+::-webkit-calendar-picker-indicator:active{
+    color: transparent;
+    opacity: 1;
+    background-image: url("../img/calendar-blue.png");
+    background-repeat: no-repeat;
+    background-size: 19px 18px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
 
 .form-label-go,
 .form-label-back,
@@ -270,12 +412,68 @@ input{
     background-color: #f2f2f2;
 }
 
-input:hover{
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+
+input[type="date"]:hover{
     background-color: #ebebeb;
 }
 
-input:focus{
+input[type="date"]:focus{
     background-color: #ffffff;
+}
+
+.form-label-parents{
+    margin-right: 31px;
+    
+}
+
+.form-label-children{
+    margin-right: 40px;
+    margin-left: 30px;
+}
+
+.plus-parents,
+.minus-parents,
+.plus-children,
+.minus-children{
+    border: 1px solid #f2f2f2;
+    background: #f2f2f2;
+
+    text-align: center;
+    padding: 0;
+
+    width: 40px;
+    height: 40px;
+
+    font-size: 25px;
+    outline: none;
+
+    color: #a9a9a9;
+    font-weight: bold;
+}
+
+.form-parents-num,
+.form-children-num{
+
+    border: 1px solid #f2f2f2;
+    background: #f2f2f2;
+
+    text-align: center;
+    vertical-align: top;
+    padding: 0;
+
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+
+    margin-left: -5px;
+    margin-right: -5px;
+
+    width: 38px;
+    height: 38px;
+    outline: none;
 }
 
 .minus-parents,
@@ -304,6 +502,7 @@ input:focus{
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
+    padding: 0;
     width: 459px;
     height: 60px;
     color: white;
@@ -398,13 +597,17 @@ input:focus{
     text-decoration: none;
 }
 
-.htmlacademy-logo img{
-    padding-top: 42px;
-    padding-left: 10px;
+a svg path:hover{
+    fill: #c8deeb;
 }
 
-.htmlacademy-pointer:hover{
-    color: #81b3d2;
+a svg path:active{
+    fill: #bdbbbc;
+}
+
+.htmlacademy-logo svg{
+    padding-top: 42px;
+    padding-left: 10px;
 }
 
 /*hotel list*/
@@ -609,6 +812,8 @@ input[type="checkbox"]:checked+label::before{
 
 .range-toogle:hover{
     background: #1c4f80;
+    width: 6px;
+    height: 6px;
 }
 
 .btn-transparent{
@@ -627,6 +832,11 @@ input[type="checkbox"]:checked+label::before{
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
+}
+
+.btn-transparent:hover{
+    background-color: #ffffff;
+    color: #262626;
 }
 
 .bread-crumbs{
@@ -674,6 +884,14 @@ input[type="checkbox"]:checked+label::before{
     border-bottom: 1px dashed #81b3d2;
 }
 
+.bread-crumbs-item li:last-child a:hover{
+    color: #95bed8;
+}
+
+.bread-crumbs-item li:last-child a:active{
+    color: #262626;
+}
+
 .bread-crumbs-item li:not(:first-child){
     padding-left: 30px;
 }
@@ -686,6 +904,17 @@ input[type="checkbox"]:checked+label::before{
 .ap-and-down a{
     text-decoration: none;
 }
+
+a.button-up path:hover,
+a.button-down path:hover{
+    fill: #231f20;
+}
+
+a.button-up path:active,
+a.button-down path:active{
+    fill: #81b3d2;
+}
+
 
 .hotels-row{
     margin: 0;
@@ -719,6 +948,14 @@ input[type="checkbox"]:checked+label::before{
     color: #000000;
 }
 
+.hotel-name a:hover{
+    color: #81b3d2;
+}
+
+.hotel-name a:active{
+    color: #cacaca;
+}
+
 .hotel-description{
     color: #000000;
     background-color: white;
@@ -741,8 +978,26 @@ input[type="checkbox"]:checked+label::before{
     background-color: #81b3d2;
 }
 
+.hotel-button-read:hover{
+    background-color: #669ec0;
+}
+
+.hotel-button-read:active{
+    color: #94b9d2;
+    background-color: #5496bd;
+}
+
 .hotel-button-order{
     background-color: #766357;
+}
+
+.hotel-button-order:hover{
+    background-color: #604e43;
+}
+
+.hotel-button-order:active{
+    color: #928a85;
+    background-color: #503e33;
 }
 
 .hotel-level,
@@ -790,6 +1045,7 @@ input[type="checkbox"]:checked+label::before{
 
 .wrapper{
     background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 1200px;
     margin: 0 40px;
 }
