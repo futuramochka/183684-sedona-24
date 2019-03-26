@@ -1,183 +1,184 @@
-body{
+body {
     margin: 0 auto;
-     
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
     width: 1280px;
     background-color: #f2f2f2;
-    color:#333333;
+    color: #333333;
     text-transform: uppercase;
 }
 
-.main-header{
+.main-header {
     position: relative;
 }
 
-.navigation-link a{
+.navigation-link a {
     font-size: 14px;
     font-weight: bold;
     line-height: 26px;
     text-decoration: none;
-
     color: #262626;
 }
 
-.navigation-link a>img{
+.navigation-link a>img {
     display: block;
     position: absolute;
     z-index: 3;
     width: 140px;
     min-height: 72px;
-    left: 540px;
+    left: 530px;
 }
 
-a.hotel-flag{
+a.hotel-flag {
     color: #766357;
 }
 
-.navigation-link-item a:hover{
+.navigation-link-item a:hover {
     color: #81b3d2;
 }
 
-.navigation-link-item a:active{
-    color:#cacaca;
+.navigation-link-item a:active {
+    color: #cacaca;
 }
 
-
-
-
-
-
-.navigation-link-item{
-    list-style: none;   
+.navigation-link-item {
+    list-style: none;
 }
 
-.navigation-link-item li:first-child{
+.navigation-link-item li:first-child {
     padding-left: 73px;
 }
 
-.navigation-link-item li:nth-child(2){
-    margin-right: 250px;
+.navigation-link-item li:nth-child(2) {
+    margin-right: 246px;
 }
 
-.navigation-link-item li:last-child{
+.navigation-link-item li:nth-child(3) {
+    margin-right: 19px;
+}
+
+.navigation-link-item li:last-child {
     padding-right: 73px;
 }
 
 .visually-hidden {
-	position: absolute;
+    position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
-    height: 1px;  
+    height: 1px;
     margin: -1px;
 }
 
-.welcome-image{
+.welcome-image {
     background-image: url("../img/background-photo-sedona.jpg");
     background-repeat: no-repeat;
+    background-position: 0 -55px;
     width: 1200px;
-    height: 513px;   
+    height: 510px;
 }
 
-.welcome-image img:nth-child(2){
-    padding-left:380px;
-    padding-right: 370px;
-    padding-top: 76px;
-    bottom: 508px;
+.welcome-image img:nth-child(2) {
+    padding-left: 372px;
+    padding-right: 372px;
+    padding-top: 80px;
+    bottom: 500px;
 }
 
-.welcome-image img:nth-child(3){
-   padding-top: 26px;
+.welcome-image img:nth-child(3) {
+    padding-top: 19px;
 }
 
-.advantages-sedona{
+.advantages-sedona {
     font-size: 21px;
     font-weight: bold;
     color: #000000;
+    white-space: pre-wrap;
     text-align: center;
     padding-top: 60px;
     margin: auto;
 }
 
-.advantages-sedona-look{
+.advantages-sedona-look {
     text-transform: uppercase;
     color: #333333;
     text-align: center;
-    padding-top: 38px;
-    padding-bottom: 60px;
+    padding-top: 26px;
+    padding-bottom: 49px;
     margin: auto;
 }
 
-.advantages-sedona-main{
+.advantages-sedona-main {
     text-align: center;
 }
 
-.advantages-sedona-main h3{
+.advantages-sedona-main h3 {
     white-space: pre-line;
 }
 
-.advantages-sedona-main li{
+.advantages-sedona-main li {
     padding-left: 40px;
 }
 
 .advantages-sedona-main li,
-.advantages-sedona-extra li{
+.advantages-sedona-extra li {
     list-style: none;
     line-height: 21px;
 }
 
-.advantages-sedona-blue{
+.advantages-sedona-blue {
     background-color: #81b3d2;
+    width: 400px;
     min-height: 255px;
     top: 50px;
 }
 
-.advantages-sedona-blue  h3{
+.advantages-sedona-blue h3 {
     padding-left: 120px;
     padding-right: 120px;
     padding-top: 47px;
     margin: 0;
     font-size: 21px;
     font-weight: bold;
-
+    line-height: 21px;
     color: white;
 }
 
-.advantages-sedona-blue p:nth-child(2){
+.advantages-sedona-blue p:nth-child(2) {
     color: white;
+    margin-top: 23px;
+    margin-bottom: 20px;
 }
 
-.advantages-sedona-blue p:nth-child(3){
+.advantages-sedona-blue p:nth-child(3) {
     white-space: pre-line;
     font-size: 14px;
-
+    line-height: 21px;
     color: white;
 }
 
-.advantages-sedona-num{
+.advantages-sedona-num {
     font-size: 14px;
-
     color: black;
 }
 
-.advantages-sedona-description{
+.advantages-sedona-description {
     padding: 0 50px;
     white-space: pre-line;
     font-size: 14px;
-
+    line-height: 21px;
     color: black;
 }
 
-.advantages-sedona-extra{
+.advantages-sedona-extra {
     text-align: center;
     min-height: 330px;
     margin: 0;
     padding: 0;
 }
 
-.advantages-sedona-extra li{
+.advantages-sedona-extra li {
     padding-top: 130px;
     white-space: pre-line;
     background-position-x: 160px;
@@ -185,28 +186,41 @@ a.hotel-flag{
     width: 400px;
 }
 
-.advantages-sedona-extra li:nth-child(1){
-    background-image: url("../img/home.png");
+.advantages-sedona-extra li:nth-child(1) {
+    background-image: url("../img/home.svg");
     background-repeat: no-repeat;
 }
 
-.advantages-sedona-extra li:nth-child(2){
-    background-image: url("../img/hotdog.png");
+.advantages-sedona-extra li:nth-child(2) {
+    background-image: url("../img/hotdog.svg");
     background-repeat: no-repeat;
+    background-position: 163px 60px;
 }
 
-.advantages-sedona-extra li:nth-child(3){
-    background-image: url("../img/present.png");
+.advantages-sedona-extra li:nth-child(3) {
+    background-image: url("../img/present.svg");
     background-repeat: no-repeat;
+    background-position: 170px 60px;
 }
 
 .advantages-sedona-extra h3,
-.advantages-sedona-extra p{
+.advantages-sedona-extra p {
     margin: 0;
     padding: 0;
 }
 
-.advantages-sedona-last{
+.advantages-sedona-extra h3 {
+    font-size: 21px;
+    line-height: 21px;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+.advantages-sedona-extra p {
+    padding-top: 5px;
+}
+
+.advantages-sedona-last {
     background-color: #eeeeee;
     min-height: 255px;
     margin: 0;
@@ -215,149 +229,183 @@ a.hotel-flag{
     list-style-type: none;
 }
 
-.advantages-sedona-last li{
+.advantages-sedona-last li {
     white-space: pre-line;
     width: 400px;
 }
 
 .advantages-sedona-last h3,
-.advantages-sedona-last p{
+.advantages-sedona-last p {
     margin: 0;
     padding: 0;
 }
 
-.offer{
+.advantages-sedona-last h3 {
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+    padding-top: 22px;
+}
+
+.advantages-sedona-last p:nth-child(2) {
+    position: relative;
+    bottom: 3px;
+}
+
+.advantages-sedona-last p:nth-child(3) {
+    position: relative;
+    bottom: 10px;
+}
+
+.offer {
     text-align: center;
     min-height: 770px;
 }
 
-iframe{
+iframe {
     position: absolute;
     z-index: 0;
     right: 74px;
-    padding-top: 61px;
+    padding-top: 58px;
 }
 
-.offer a{
+.offer a {
     background-color: #766357;
 }
 
-.offer a:hover{
+.offer a:hover {
     background-color: #604e43;
 }
 
-.offer a:active{
+.offer a:active {
     background-color: #503e33;
 }
-.offer-question{
+
+.offer-question {
     font-size: 30px;
     font-weight: bold;
     color: #000000;
     margin: 0;
     padding-top: 60px;
-    padding-bottom: 38px;
-
+    padding-bottom: 27px;
     background-color: white;
 }
 
-.offer-choose{
+.offer-choose {
     color: #333333;
     background-color: white;
-    padding-bottom: 90px;
+    font-size: 14px;
+    line-height: 24px;
+    white-space: pre-wrap;
+    padding-bottom: 75px;
     margin: 0;
 }
 
-.offer-search-hotel{
+.offer-search-hotel {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
     color: white;
-
     position: relative;
     z-index: 2;
-
-    padding: 34px 140px;
+    padding: 32px 140px;
+    padding-top: 27px;
     text-decoration: none;
     border: 1px solid #766357;
 }
 
-.form-search{
+.form-search {
     display: none;
 }
 
-@keyframes bounce{
-    0% { transform: translateY(-100px);}
-    10% { transform: translateY(44px);}
-    20% { transform: translateY(88px);}
-    30% { transform: translateY(176px);}
-    100% { transform: translateY(0px);}
+@keyframes bounce {
+    0% {
+        transform: translateY(-100px);
+    }
+    10% {
+        transform: translateY(44px);
+    }
+    20% {
+        transform: translateY(88px);
+    }
+    30% {
+        transform: translateY(176px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
-.form-search-display{
+.form-search-display {
     display: block;
-
     animation-name: bounce;
     animation-duration: 0.6s;
 }
 
-.form-search-hotel{
+.form-search-hotel {
     width: 572px;
-    min-height: 434px;
+    min-height: 427px;
     left: 314px;
-
     position: relative;
     z-index: 1;
     background-color: #ffffff;
 }
 
-.form-search-hotel p:nth-child(1){
-    padding-top: 90px;
+.form-search-hotel p:nth-child(1) {
+    padding-top: 85px;
 }
 
 .form-search-hotel p:nth-child(1),
-.form-search-hotel p:nth-child(2){
-    padding-bottom: 30px;
+.form-search-hotel p:nth-child(2) {
+    padding-bottom: 28px;
     margin: 0;
 }
 
-.form-search-hotel p:nth-child(3){
+.form-search-hotel p:nth-child(3) {
     padding-bottom: 53px;
     margin: 0;
 }
 
 .form-date-go,
-.form-date-back{
+.form-date-back {
     border: 1px solid #f2f2f2;
     background: #f2f2f2;
     color: #000000;
     font-size: 14px;
     font-weight: bold;
-    
-    margin-left: 15px;
-    
     width: 350px;
     height: 40px;
 }
 
 .form-date-go:hover,
-.form-date-back:hover{
+.form-date-back:hover {
     background-color: #ebebeb;
 }
 
-.datetime-reset-button{
+.datetime-reset-button {
     display: none;
 }
 
-.form-date-go{
-    margin-left: 17px;
+.form-date-go {
+    width: 344px;
+    height: 36px;
+    position: relative;
+    left: 9px;
+}
+
+.form-date-back {
+    width: 344px;
+    height: 36px;
+    position: relative;
+    left: 8px;
 }
 
 .form-date-go:focus,
-.form-date-back:focus{
-    outline: 1px solid #e5e5e5; 
+.form-date-back:focus {
+    outline: 1px solid #e5e5e5;
 }
 
-::-webkit-datetime-edit{
+::-webkit-datetime-edit {
     padding: 10px;
     font-size: 14px;
     line-height: 21px;
@@ -365,71 +413,81 @@ iframe{
 }
 
 ::-webkit-inner-spin-button,
-::-webkit-clear-button{
+::-webkit-clear-button {
     display: none;
 }
 
-::-webkit-calendar-picker-indicator{
+::-webkit-calendar-picker-indicator {
     color: transparent;
     opacity: 1;
     background-image: url("../img/calendar.png");
     background-repeat: no-repeat;
-    background-size: 19px 18px;
-    padding-right: 10px;
+    background-size: 21px 22px;
+    padding-right: 12px;
     padding-bottom: 10px;
 }
 
-::-webkit-calendar-picker-indicator:hover{
+::-webkit-calendar-picker-indicator:hover {
     color: transparent;
     opacity: 1;
     background-image: url("../img/calendar-black.png");
     background-repeat: no-repeat;
-    background-size: 19px 18px;
+    background-size: 21px 22px;
     background-color: #ffffff;
-    padding-right: 10px;
+    padding-right: 12px;
     padding-bottom: 10px;
 }
 
-::-webkit-calendar-picker-indicator:active{
+::-webkit-calendar-picker-indicator:active {
     color: transparent;
     opacity: 1;
     background-image: url("../img/calendar-blue.png");
     background-repeat: no-repeat;
-    background-size: 19px 18px;
-    padding-right: 10px;
+    background-size: 21px 22px;
+    padding-right: 12px;
     padding-bottom: 10px;
 }
-
 
 .form-label-go,
 .form-label-back,
 .form-label-parents,
-.form-label-children{
+.form-label-children {
     font-weight: bold;
 }
 
-input{
+.form-label-go {
+    position: relative;
+    right: 8px;
+}
+
+.form-label-back {
+    position: relative;
+    right: 8px;
+}
+
+input {
     background-color: #f2f2f2;
 }
 
-input[type="number"]{
+input[type="number"] {
     -moz-appearance: textfield;
 }
 
-input[type="date"]:hover{
+input[type="date"]:hover {
     background-color: #ebebeb;
 }
 
-input[type="date"]:focus{
+input[type="date"]:focus {
     background-color: #ffffff;
 }
 
-.form-label-parents{
+.form-label-parents {
     margin-right: 31px;
-    
 }
 
-.form-label-children{
+.form-label-children {
+    position: relative;
+    left: 20px;
     margin-right: 40px;
     margin-left: 30px;
 }
@@ -437,40 +495,37 @@ input[type="date"]:focus{
 .plus-parents,
 .minus-parents,
 .plus-children,
-.minus-children{
+.minus-children {
     border: 1px solid #f2f2f2;
     background: #f2f2f2;
-
     text-align: center;
     padding: 0;
-
     width: 40px;
     height: 40px;
-
+    position: relative;
+    left: 3px;
+    top: 2px;
     font-size: 25px;
     outline: none;
-
     color: #a9a9a9;
     font-weight: bold;
 }
 
 .form-parents-num,
-.form-children-num{
-
+.form-children-num {
     border: 1px solid #f2f2f2;
     background: #f2f2f2;
-
     text-align: center;
     vertical-align: top;
     padding: 0;
-
     font-size: 15px;
     color: #000000;
     font-weight: bold;
-
+    position: relative;
+    left: 3px;
+    top: 2px;
     margin-left: -5px;
     margin-right: -5px;
-
     width: 38px;
     height: 38px;
     outline: none;
@@ -479,29 +534,30 @@ input[type="date"]:focus{
 .minus-parents,
 .minus-children,
 .plus-parents,
-.plus-children{
+.plus-children {
     color: #a9a9a9;
 }
 
 .minus-parents:hover,
 .minus-children:hover,
 .plus-parents:hover,
-.plus-children:hover{
+.plus-children:hover {
     color: #000000;
 }
 
 .minus-parents:active,
 .minus-children:active,
 .plus-parents:active,
-.plus-children:active{
+.plus-children:active {
     color: #81b3d2;
 }
 
-.search{
+.search {
     cursor: pointer;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
+    text-transform: uppercase;
     padding: 0;
     width: 459px;
     height: 60px;
@@ -510,55 +566,55 @@ input[type="date"]:focus{
     background-color: #81b3d2;
 }
 
-.search:hover{
+.search:hover {
     background-color: #669ec0;
 }
 
-.search:active{
+.search:active {
     background-color: #5496bd;
 }
 
-.main-footer{
+.main-footer {
     width: 1200px;
 }
 
 .main-footer .hashtag,
 .main-footer .social-button,
-.main-footer .htmlacademy-logo{
+.main-footer .htmlacademy-logo {
     width: 400px;
     text-align: center;
 }
 
-.hashtag{
+.hashtag {
     font-size: 21px;
     padding-top: 50px;
     font-weight: bold;
     color: #000000;
-
-    background-color: white;
+    position: relative;
+    bottom: 7px;
 }
 
-.social-button-item{
+.social-button-item {
     margin: 0;
-    padding-top: 35px;
+    padding-top: 32px;
     padding-bottom: 35px;
-    padding-left: 115px;
-    padding-right: 115px;
+    padding-left: 118px;
+    padding-right: 118px;
 }
 
-.social-button-item li .fb-link{
-    background-image: url("../img/fb-icon.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.social-button-item li .tt-link{
+.social-button-item li .tt-link {
     background-image: url("../img/twitter.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.social-button-item li .yt-link{
+.social-button-item li .fb-link {
+    background-image: url("../img/fb-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-button-item li .yt-link {
     background-image: url("../img/youtube.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -566,7 +622,7 @@ input[type="date"]:focus{
 
 .social-button-item li .fb-link,
 .social-button-item li .tt-link,
-.social-button-item li .yt-link{
+.social-button-item li .yt-link {
     background-color: #81b3d2;
     width: 50px;
     height: 50px;
@@ -575,150 +631,152 @@ input[type="date"]:focus{
 
 .social-button-item li .fb-link:hover,
 .social-button-item li .tt-link:hover,
-.social-button-item li .yt-link:hover{
+.social-button-item li .yt-link:hover {
     background-color: #669ec0;
 }
 
 .social-button-item li .fb-link:active,
 .social-button-item li .tt-link:active,
-.social-button-item li .yt-link:active{
+.social-button-item li .yt-link:active {
     background-color: #5496bd;
 }
 
-.htmlacademy-pointer{
+.htmlacademy-pointer {
     margin: 0;
-    padding-top: 53px;
+    padding-top: 50px;
     color: #231f20;
-
-    background-color: white;
 }
 
-.htmlacademy-logo{
+.htmlacademy-logo {
     text-decoration: none;
+    position: relative;
+    bottom: 7px;
 }
 
-a svg path:hover{
+a svg path:hover {
     fill: #c8deeb;
 }
 
-a svg path:active{
+a svg path:active {
     fill: #bdbbbc;
 }
 
-.htmlacademy-logo svg{
+.htmlacademy-logo svg {
     padding-top: 42px;
     padding-left: 10px;
 }
 
+
 /*hotel list*/
 
-.selection-services{
+.selection-services {
     width: 1200px;
-    min-height: 217px;
-    background-image: url('../img/IMG_9190.jpg');
+    min-height: 200px;
+    background-image: url('../img/sedona-info.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
-.selection-services-form{
+.selection-services-form {
     color: white;
-    padding: 30px 73px;
-    
+    padding: 20px 73px;
 }
 
-.selection-services-form fieldset{
+.selection-services-form fieldset {
     border: none;
-
     padding: 0;
     margin: 0;
 }
 
-.selection-services-form legend{
+.selection-services-form legend {
     font-size: 16px;
     font-weight: 600;
     line-height: 21px;
-
     color: #ffffff;
 }
 
-.type-of-housing-first-item{
+.type-of-housing-first {
+    padding-top: 5px;
+}
+
+.type-of-housing-first-item {
     padding: 0;
-    margin:0;
-}
-
-.type-of-housing-second{
-    padding-left: 115px;
-}
-
-.type-of-housing-second-item{
-    padding-left: 115px;
     margin: 0;
-    
+}
+
+.type-of-housing-second {
+    padding-left: 120px;
+    padding-top: 5px;
+}
+
+.type-of-housing-second-item {
+    padding-left: 120px;
+    margin: 0;
 }
 
 .type-of-housing-first-item li,
-.type-of-housing-second-item li{
-    padding-top: 30px;
-    
+.type-of-housing-second-item li {
+    padding-top: 27px;
     font-size: 14px;
     line-height: 21px;
-
     color: #ffffff;
 }
 
-input[type="checkbox"]{
+.type-of-housing-first-item li:nth-child(3) {
+    padding-bottom: 4px;
+}
+
+input[type="checkbox"] {
     display: none;
 }
 
-input[type="checkbox"]+label{
+input[type="checkbox"]+label {
     cursor: pointer;
 }
 
-input[type="checkbox"]+label::before{
+input[type="checkbox"]+label::before {
     content: "";
     display: inline-block;
-
-    width:23px;
+    width: 23px;
     height: 23px;
-
-    margin: 0 15px -6px 0;
-
+    margin: 0 18px -9px 0;
     background-image: url("../img/off-and-on.png");
     background-repeat: no-repeat;
 }
 
-input[type="checkbox"]+label::before{
+input[type="checkbox"]+label::before {
     background-position: 0 0;
 }
 
-input[type="checkbox"]:checked+label::before{
+input[type="checkbox"]:checked+label::before {
     background-position: 0 -23px;
 }
 
-.filter-range{
+.filter-range {
     margin-left: auto;
-    width: 300px;
-
+    width: 314px;
+    height: 34px;
     color: #ffffff;
     text-transform: uppercase;
 }
 
-.filter-range-title{
-    padding-bottom: 9px;
+.filter-range-title {
+    padding-bottom: 15px;
+    padding-top: 7px;
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
 }
 
-.price-controls{
+.price-controls {
     display: flex;
     position: relative;
-    height: 36px;
-    margin-bottom: 20px;
-    
+    height: 34px;
+    bottom: 8px;
+    right: 2px;
+    margin-bottom: 13px;
     font-size: 0;
-
     border: 2px solid #ffffff;
     border-radius: 2px;
 }
@@ -726,246 +784,237 @@ input[type="checkbox"]:checked+label::before{
 .price-controls::after {
     content: "";
     position: absolute;
-  
     width: 2px;
     height: 22px;
-
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-  
+    transform: translate(-50%, -50%);
     background: #ffffff;
-  }
+}
 
-.price-controls label{
+.price-controls label {
     display: inline-block;
-
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
     cursor: pointer;
 }
 
-.price-controls .min-price{
+.price-controls .min-price {
     width: 90px;
     padding-left: 65px;
 }
 
-.price-controls .max-price{
+.price-controls .max-price {
     width: 90px;
     padding-left: 36px;
 }
 
-.price-controls input{
+.price-controls input {
     width: 50px;
     margin: 0;
-
     color: inherit;
     font: inherit;
-
     background: none;
     border: none;
 }
 
-.range-controls{
+.range-controls {
     position: relative;
-
     margin-bottom: 32px;
 }
 
-.range-controls .scale{
+.range-controls .scale {
     height: 2px;
-
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
 }
 
-.range-controls .bar{
+.range-controls .bar {
     width: 80%;
     height: 2px;
-
     background: #ffffff;
 }
 
-.range-toogle{
+.range-toogle {
     position: absolute;
     top: -9px;
-
     width: 4px;
     height: 4px;
-
     background: #ababab;
     border: 8px solid #ffffff;
-
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0,1,1,0.2);
-
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
 }
 
-.range-toolge-min{
+.range-toolge-min {
     left: 0;
 }
 
-.range-toogle-max{
+.range-toogle-max {
     left: 80%;
 }
 
-.range-toogle:hover{
+.range-toogle:hover {
     background: #1c4f80;
     width: 6px;
     height: 6px;
 }
 
-.btn-transparent{
+.btn-transparent {
     display: block;
     margin: 0 auto;
-    margin-top: 50px;
-
-    padding: 6px 35px;
-
+    margin-top: 33px;
+    padding: 7px 34px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
     text-transform: uppercase;
-
     background: transparent;
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
 }
 
-.btn-transparent:hover{
+.btn-transparent:hover {
     background-color: #ffffff;
     color: #262626;
 }
 
-.bread-crumbs{
+.bread-crumbs {
     width: 1200px;
     min-height: 87px;
     align-items: baseline;
 }
 
-.bread-crumbs h3{
+.bread-crumbs h3 {
     font-size: 21px;
     line-height: 23px;
     margin: 0;
     padding-top: 33px;
     padding-bottom: 33px;
     padding-left: 73px;
-
     color: #000000;
 }
-.bread-crumbs p{
+
+.bread-crumbs span {
+    margin-left: 5px;
+}
+
+.bread-crumbs p {
     font-size: 12px;
     line-height: 18px;
     margin: 0;
     padding-left: 50px;
-
-    color: #262626;
+    color: #000000;
 }
-.bread-crumbs-item{
+
+.bread-crumbs-item {
     font-size: 12px;
     line-height: 18px;
     margin: 0;
     padding-left: 40px;
 }
 
-.bread-crumbs-item li a{
+.bread-crumbs-item li a {
     text-decoration: none;
 }
 
-.bread-crumbs-item li:first-child a{
+.bread-crumbs-item li:first-child a {
     color: #81b3d2;
 }
 
 .bread-crumbs-item li:nth-child(2) a,
-.bread-crumbs-item li:last-child a{
+.bread-crumbs-item li:last-child a {
     color: #d9d9d9;
     border-bottom: 1px dashed #81b3d2;
 }
 
-.bread-crumbs-item li:last-child a:hover{
+.bread-crumbs-item li:last-child a:hover {
     color: #95bed8;
 }
 
-.bread-crumbs-item li:last-child a:active{
+.bread-crumbs-item li:last-child a:active {
     color: #262626;
 }
 
-.bread-crumbs-item li:not(:first-child){
+.bread-crumbs-item li:not(:first-child) {
     padding-left: 30px;
 }
 
-.ap-and-down{
+.ap-and-down {
     margin-left: auto;
     padding-right: 73px;
 }
 
-.ap-and-down a{
+.button-up {
+    position: relative;
+    right: 7px;
+}
+
+.ap-and-down a {
     text-decoration: none;
 }
 
 a.button-up path:hover,
-a.button-down path:hover{
+a.button-down path:hover {
     fill: #231f20;
 }
 
 a.button-up path:active,
-a.button-down path:active{
+a.button-down path:active {
     fill: #81b3d2;
 }
 
-
-.hotels-row{
+.hotels-row {
     margin: 0;
     padding: 0;
 }
 
-.hotel-item{
+.hotel-item {
     list-style-type: none;
     width: 1200px;
     min-height: 150px;
     align-items: center;
 }
 
-.hotel-view{
+.hotel-view {
     padding-left: 73px;
     padding-right: 32px;
 }
 
-.hotel-name{
+.hotel-name {
     font-size: 21px;
     font-weight: bold;
     color: #000000;
     margin: 0;
     padding-bottom: 10px;
-
     background-color: white;
 }
 
-.hotel-name a{
+.hotel-name a {
     text-decoration: none;
     color: #000000;
 }
 
-.hotel-name a:hover{
+.hotel-name a:hover {
     color: #81b3d2;
 }
 
-.hotel-name a:active{
+.hotel-name a:active {
     color: #cacaca;
 }
 
-.hotel-description{
+.hotel-description {
     color: #000000;
     background-color: white;
 }
 
-.hotel-price-level{
+.hotel-price-level {
     padding-bottom: 10px;
 }
 
-.hotel-button a{
+.hotel-button a {
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
@@ -974,155 +1023,176 @@ a.button-down path:active{
     color: white;
 }
 
-.hotel-button-read{
+.hotel-button-read {
     background-color: #81b3d2;
 }
 
-.hotel-button-read:hover{
+.hotel-button-read:hover {
     background-color: #669ec0;
 }
 
-.hotel-button-read:active{
+.hotel-button-read:active {
     color: #94b9d2;
     background-color: #5496bd;
 }
 
-.hotel-button-order{
+.hotel-button-order {
     background-color: #766357;
 }
 
-.hotel-button-order:hover{
+.hotel-button-order:hover {
     background-color: #604e43;
 }
 
-.hotel-button-order:active{
+.hotel-button-order:active {
     color: #928a85;
     background-color: #503e33;
 }
 
 .hotel-level,
 .hotel-price,
-.hotel-stars{
+.hotel-stars {
     font-size: 14px;
     line-height: 21px;
-    color: #939393;
     margin: 0;
-
     background-color: white;
 }
 
-.hotel-price{
-    padding-left: 5px;
+.hotel-stars {
+    color: #666666;
+}
+
+.hotel-price-level {
+    color: #333333;
+    position: relative;
+    bottom: 5px;
+}
+
+.hotel-price {
+    padding-left: 35px;
+}
+
+.hotel-item:nth-child(2) .hotel-price {
+    padding-left: 62px;
+}
+
+.hotel-item:nth-child(3) .hotel-price {
+    padding-left: 18px;
 }
 
 .hotel-stars li,
 .bread-crumbs li,
-.selection-services li{
+.selection-services li {
     list-style-type: none;
 }
 
-.hotel-stars{
+.hotel-stars {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-left: auto;
     padding-right: 73px;
 }
-.hotel-stars-item{
+
+.hotel-stars-item {
     justify-content: flex-end;
     width: 100%;
     padding: 0;
     padding-bottom: 44px;
 }
 
-.hotel-rating{
+.hotel-stars-item li {
+    padding-right: 4px;
+}
+
+.hotel-rating {
     margin: 0;
     background: #f2f2f2;
     padding: 3px 15px;
 }
 
+
 /*grid style*/
 
-.wrapper{
+.wrapper {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 1200px;
     margin: 0 40px;
 }
 
-.navigation-link{
+.navigation-link {
     height: 55px;
 }
 
-.navigation-link-item{
+.navigation-link-item {
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
 }
 
-.navigation-link-item li{
+.navigation-link-item li {
     padding-top: 14px;
 }
 
-.navigation-link-item li:firs-child{
+.navigation-link-item li:first-child {
     left: 73px;
 }
 
-.advantages-sedona-main{
+.advantages-sedona-main {
     display: flex;
 }
 
-.advantages-sedona-extra{
+.advantages-sedona-extra {
     display: flex;
 }
 
-.advantages-sedona-last{
+.advantages-sedona-last {
     display: flex;
 }
 
-.main-footer{
+.main-footer {
     display: flex;
 }
 
-.social-button-item{
+.social-button-item {
     display: flex;
     justify-content: space-around;
 }
-.social-button-item li{
+
+.social-button-item li {
     display: flex;
 }
 
-.htmlacademy-logo{
+.htmlacademy-logo {
     display: flex;
     justify-content: center;
 }
 
+
 /*grid catalog*/
-.selection-services-form{
+
+.selection-services-form {
     display: flex;
 }
 
-.bread-crumbs{
+.bread-crumbs {
     display: flex;
 }
 
-.bread-crumbs-item{
+.bread-crumbs-item {
     display: flex;
 }
 
-.hotel-item{
+.hotel-item {
     display: flex;
 }
 
-.hotel-price-level{
+.hotel-price-level {
     display: flex;
 }
 
-.hotel-stars-item{
+.hotel-stars-item {
     display: flex;
 }
-
-
-
-
